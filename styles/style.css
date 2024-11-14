@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #007bff, #164f8c);
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container p {
+  width: 85%;
+  font-size: 15px;
+  padding: 10px;
+  color: gray;
+  text-align: justify;
+}
+.container h1 {
+  font-size: 1.5rem;
+  width: 85%;
+  margin-bottom: 5px;
+  background: linear-gradient(to top, #007bff, #164f8c);
+  color: white;
+  border-radius: 8px;
+}
+.container form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.container form label {
+  font-weight: 600;
+  text-align: left;
+}
+.container form input, .container form select, .container form button {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.container form button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s;
+}
+.container form button:hover {
+  background-color: #164f8c;
+}
+.container #productTable {
+  display: none;
+  width: 85%;
+}
+.container #productTable tbody th, .container #productTable tbody td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.container .filters {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.container .filters button {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.container .filters button:hover {
+  background-color: #164f8c;
+}
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.container table thead {
+  background-color: #007bff;
+  color: #fff;
+}
+.container table thead th, .container table thead td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}/*# sourceMappingURL=style.css.map */
