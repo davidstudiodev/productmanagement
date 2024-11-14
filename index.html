@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gestión de Productos</h1>
+        <p>La aplicación "Product Management" es una herramienta de gestión de productos que permite al usuario crear, visualizar y organizar una lista de productos mediante un sistema de filtrado y ordenación.</p>
+        <form id="product-form">
+            
+            <input type="text" id="productName" placeholder="Nombre del producto" required>
+            
+            <label for="productCategory">Categoría:</label>
+            <select id="productCategory" required>
+                <option value="Electrónica">Electrónica</option>
+                <option value="Ropa">Ropa</option>
+                <option value="Alimentos">Alimentos</option>
+            </select>
+
+            <input type="number" id="productPrice" placeholder="Precio" required>
+            
+            <button type="button" id="addProductButton">Agregar producto</button>
+        </form>
+
+        <table id="productTable">
+            <p>La tabla de productos muestra la lista actual de productos agregados, organizada en columnas de Nombre, Categoría y Precio, con opciones para filtrar y ordenar según los criterios seleccionados por el usuario.</p>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody id="productTableBody">
+                
+            </tbody>
+            </table>
+
+        <div class="filters">
+            <button id="filterCategoryButton">Filtrar por categoría</button>
+            <button id="filterPriceButton">Filtrar por precio máximo</button>
+            <button id="sortPriceButton">Ordenar por precio</button>
+        </div>
+
+        
+    </div>
+
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
